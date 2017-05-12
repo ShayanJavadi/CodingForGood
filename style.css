@@ -46,6 +46,7 @@ p {
   line-height: 1.58;
   letter-spacing: -.003em;
   text-align: center;
+  font-weight: 400;
 }
 
 .primary-button {
@@ -79,47 +80,87 @@ nav {
   color: #fff;
   background-color: rgba(255, 255, 255, 0);
   z-index: 99999;
+  margin: 30px;
 }
 
 .row {
   margin: 0 auto;
+  max-width: 1140px
 }
 
 header .row {
   width: 100%;
 }
 
-.nav-hero {
-  position: absolute;
+nav ul {
+  margin-top: 10px;
 }
-
-.nav-hero {
-  padding: 30px 40px;
-}
-
-.nav-hero img {
-  max-width: 150%;
-}
-
 
 ul {
   margin: 0;
+  float: right;
+  list-style: none;
 }
 
 li {
-  list-style: none;
+  margin-left: 30px;
   display: inline-block;
+  font-size: 17px;
 }
 
 
 /*hero*/
+
+.hero-button {
+  background-color: #f21d5b;
+  color: rgba(249, 247, 247, 0.83);
+  padding: 10px;
+  box-shadow: 0 2px 2px rgba(34, 34, 34, 0.31);
+  border-radius: 2%;
+  width: 100px;
+}
+
+.hero-button:hover {
+  background-color: #e31b55;
+}
+
+.hero-button:active {
+  background-color: #d0184d;
+  box-shadow: 0 2px 2px rgba(34, 34, 34, 0.21);
+}
+
+.hero-text-container {
+  position: absolute;
+  color: #fff;
+  bottom: 24em;
+  left: 13.5em;
+  width: 80%;
+  margin: 0;
+  padding: 0;
+  z-index: 1000;
+  text-align: left;
+}
+
+.hero-text-container p,
+.hero-text-container a {
+  color: rgba(249, 247, 247, 0.83);
+  text-align: left;
+  padding-left: 45px;
+}
+
+.hero-text-container h1 {
+  color: rgba(255, 255, 255, 0.88);
+  text-align: left;
+  padding-left: 30px;
+}
+
 .section-hero-1,
 .section-hero-2,
 .section-hero-3 {
   background-size: cover;
   background-attachment: fixed;
   width: 100%;
-  height: 700px;
+  height: 600px;
   border-radius: 3px;
   display: inline-block;
   opacity: 1;
@@ -127,9 +168,38 @@ li {
 
 /*can't tell if elegant or hack*/
 /*basically the divs are hiddene until the matching section hero comes around */
-.section-hero-1-text p,
+
 .section-hero-1-text h1,
+.section-hero-1-text p,
 .section-hero-1-text a,
+.section-hero-2-text h1,
+.section-hero-2-text p,
+.section-hero-2-text a,
+.section-hero-3-text h1,
+.section-hero-3-text p,
+.section-hero-3-text a {
+  opacity: 0;
+  display: none;
+  transition: opacity 0.2s;
+}
+
+
+.section-hero-1 .section-hero-1-text h1,
+.section-hero-1 .section-hero-1-text p,
+.section-hero-1 .section-hero-1-text a,
+.section-hero-2 .section-hero-2-text h1,
+.section-hero-2 .section-hero-2-text p,
+.section-hero-2 .section-hero-2-text a,
+.section-hero-3 .section-hero-3-text h1,
+.section-hero-3 .section-hero-3-text p,
+.section-hero-3 .section-hero-3-text a {
+  opacity: 1;
+  display: block;
+}
+
+ /*.hero-text-container  .section-hero-1-text p,
+ .hero-text-container .section-hero-1-text h1,
+ .hero-text-container .section-hero-1-text a,
 .section-hero-2-text p,
 .section-hero-2-text h1,
 .section-hero-2-text a,
@@ -139,11 +209,11 @@ li {
   opacity: 0;
   transition: opacity 0.2s;
   display: none;
-}
+}*/
 
-.section-hero-1 .section-hero-1-text p,
-.section-hero-1 .section-hero-1-text h1,
-.section-hero-1 .section-hero-1-text a,
+/*.section-hero-1 .hero-text-container .section-hero-1-text p,
+.section-hero-1 .hero-text-container .section-hero-1-text h1,
+.section-hero-1 .hero-text-container .section-hero-1-text a,
 .section-hero-2 .section-hero-2-text p,
 .section-hero-2 .section-hero-2-text h1,
 .section-hero-2 .section-hero-2-text a,
@@ -152,21 +222,21 @@ li {
 .section-hero-3 .section-hero-3-text a, {
   opacity: 1;
   display: block;
-}
+}*/
 
 .section-hero-1 {
-  background-image: -webkit-linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.6)),url(img/hero-pic-1.jpg);
-  background-image: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.6)),url(img/hero-pic-1.jpg)
+  background-image: -webkit-linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.6)),url(img/hero-pic-1.jpg);
+  background-image: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.6)),url(img/hero-pic-1.jpg)
 }
 
 .section-hero-2 {
-  background-image: -webkit-linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.6)),url(img/hero-pic-2.jpg);
-  background-image: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.6)),url(img/hero-pic-2.jpg)
+  background-image: -webkit-linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.6)),url(img/hero-pic-2.jpg);
+  background-image: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.6)),url(img/hero-pic-2.jpg)
 }
 
 .section-hero-3 {
-  background-image: -webkit-linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.6)),url(img/hero-pic-3.jpg);
-  background-image: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.6)),url(img/hero-pic-3.jpg)
+  background-image: -webkit-linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.6)),url(img/hero-pic-3.jpg);
+  background-image: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.6)),url(img/hero-pic-3.jpg)
 }
 
 /*mainbody*/
