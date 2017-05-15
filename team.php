@@ -19,10 +19,11 @@
       </nav>
   </header>
   <main>
-    <section>
       <div class="team-hero">
+        <div class="single-page-text-box">
+          <h1>The Team<h1>
+        </div>
       </div>
-    </section>
 
     <section>
       <div class="row">
