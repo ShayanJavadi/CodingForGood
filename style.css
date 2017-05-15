@@ -2,6 +2,9 @@
 /*primary color dark 1 #3b9dc7 */
 /*primary color dark 2 #3386aa */
 
+/*secondary color #f21d5b*/
+/*secondary color dark 1 #e31b55*/
+/*secondary color dark 2 #d0184d*/
 /*footer black #2d2d2d*/
 
 /*general */
@@ -111,6 +114,48 @@ li {
 
 /*hero*/
 
+/*secondary color #f21d5b*/
+/*secondary color dark 1 #e31b55*/
+/*secondary color dark 2 #d0184d*/
+
+.slider-buttons {
+  position: absolute;
+    color: #fff;
+    top: 75%;
+    left: 50%;
+    margin: 0;
+    padding: 0;
+    z-index: 1000;
+    text-align: left;
+    transform: translateX(-50%) translateY(calc(-50%));
+}
+
+.slider-buttons .nav-dot {
+  display: inline-block;
+  background: #fff;
+  height: 13px;
+  width: 13px;
+  border-radius: 100%;
+  margin: 3px;
+  cursor: pointer;
+  -webkit-box-shadow: 0 2px 2px rgba(34, 34, 34, 0.91);
+          box-shadow: 0 2px 2px rgba(34, 34, 34, 0.91);
+  -webkit-transition: background 0.1s ease-in-out;
+  transition: background 0.1s ease-in-out;
+}
+
+.slider-buttons .nav-dot.active {
+  background: #c61749;
+}
+
+.slider-buttons .nav-dot:active {
+  background: #d1194e
+}
+
+
+.slider-buttons .nav-dot:hover {
+  background: #f21d5b
+}
 .hero-button {
   background-color: #f21d5b;
   color: rgba(249, 247, 247, 0.83);
