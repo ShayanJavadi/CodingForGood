@@ -1,46 +1,41 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <link rel="stylesheet" href="vendor/foundation.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-  </head>
+<?php include 'header.html' ?>
   <body>
+
     <header class="section-hero-1 slider--js">
-      <nav>
-        <div class="row">
-          <img src="img/logo-white.png" width="350" alt="">
-          <ul class="text-right float-right">
-            <li>Home</li>
-            <li>Projects</li>
-            <li>Events</li>
-            <li>Team</li>
-            <li>Join</li>
-            <li>Contact</li>
-            <li>About</li>
-          </ul>
+      <div class="header-wrap">
+        <nav>
+          <div class="row">
+            <img src="img/logo-white.png" width="350" alt="">
+            <ul class="text-right float-right">
+              <li>Home</li>
+              <li>Projects</li>
+              <li>Events</li>
+              <li>Team</li>
+              <li>Join</li>
+              <li>Contact</li>
+              <li>About</li>
+            </ul>
+          </div>
+        </nav>
+        <div class="hero-text-container">
+          <span class="section-hero-1-text">
+            <h1>Join Us Copywrite</h1>
+            <p>Paragraph copywrite</p>
+            <a href="#"><button  class="hero-button" type="button" name="button">Join Us</button></a>
+          </span>
+          <span class="section-hero-2-text">
+            <h1>Apply to us copy write</h1>
+            <p>Apply to us copy</p>
+            <a href="#"><button  class="hero-button" type="button" name="button">Apply</button></a>
+          </span>
+          <span class="section-hero-3-text">
+            <h1>Projects copy write</h1>
+            <p>Project paragraph copy write</p>
+            <a href="#"><button class="hero-button"  type="button" name="button">Our Work</button></a>
+          </span>
         </div>
-      </nav>
-      <div class="hero-text-container">
-        <span class="section-hero-1-text">
-          <h1>Join Us Copywrite</h1>
-          <p>Paragraph copywrite</p>
-          <a href="#"><button  class="hero-button" type="button" name="button">Join Us</button></a>
-        </span>
-        <span class="section-hero-2-text">
-          <h1>Apply to us copy write</h1>
-          <p>Apply to us copy</p>
-          <a href="#"><button  class="hero-button" type="button" name="button">Apply</button></a>
-        </span>
-        <span class="section-hero-3-text">
-          <h1>Projects copy write</h1>
-          <p>Project paragraph copy write</p>
-          <a href="#"><button class="hero-button"  type="button" name="button">Our Work</button></a>
-        </span>
-      </div>
-      <div class="slider-buttons">
+        <div class="slider-buttons">
+        </div>
       </div>
     </header>
     <main>
@@ -80,19 +75,4 @@
           </div>
         </div>
       </section>
-      <footer>
-        <div class="row">
-          <div class="large-6 colunmns">
-
-          </div>
-          <div class="large-6 colunmns">
-
-          </div>
-
-        </div>
-      </footer>
-    </main>
-  </body>
-  <script src="noframework.waypoints.min.js"></script>
-  <script src="app.js"></script>
-</html>
+      <?php include'footer.html' ?>
