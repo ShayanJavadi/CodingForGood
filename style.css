@@ -11,7 +11,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   outline: none;
 }
 
@@ -49,7 +50,7 @@ img {
 p {
   font-style: normal;
   font-size: 18px;
-  line-height: 1.58;
+  line-height: 1.8;
   letter-spacing: -.003em;
   text-align: center;
   font-weight: 300;
@@ -58,9 +59,11 @@ p {
 .primary-button {
   background-color: #41b2e2;
   color: #fff;
-  box-shadow: 0 2px 2px rgba(34, 34, 34, 0.31);
+  -webkit-box-shadow: 0 2px 2px rgba(34, 34, 34, 0.31);
+          box-shadow: 0 2px 2px rgba(34, 34, 34, 0.31);
   padding: 15px;
   border-radius: 5%;
+  -webkit-transition: background-color 0.2s;
   transition: background-color 0.2s;
 }
 
@@ -70,7 +73,8 @@ p {
 
 .primary-button:active {
   background-color: #3386aa;
-  box-shadow: 0 2px 2px rgba(34, 34, 34, 0.21);
+  -webkit-box-shadow: 0 2px 2px rgba(34, 34, 34, 0.21);
+          box-shadow: 0 2px 2px rgba(34, 34, 34, 0.21);
 
 }
 
@@ -87,7 +91,8 @@ a:active {
   width:100%;
   z-index: 9999;
   background-color: rgba(255, 255, 255, 0.98);;
-  box-shadow: 0 2px 2px #efefef;
+  -webkit-box-shadow: 0 2px 2px #efefef;;
+          box-shadow: 0 2px 2px #efefef;
 }
 
 
@@ -97,10 +102,14 @@ a:active {
 }
 
 nav {
+  position: absolute;
   color: #fff;
   background-color: rgba(255, 255, 255, 0);
   z-index: 99999;
-  margin: 30px;
+  width: 90%;
+  margin-top: 30px;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .row {
@@ -146,7 +155,8 @@ li {
     padding: 0;
     z-index: 1000;
     text-align: left;
-    transform: translateX(-50%) translateY(calc(-50%));
+    -webkit-transform: translateX(-50%) translateY(calc(-50%));
+            transform: translateX(-50%) translateY(calc(-50%));
 }
 
 .slider-buttons .nav-dot {
@@ -179,7 +189,8 @@ li {
   background-color: #f21d5b;
   color: rgba(249, 247, 247, 0.83);
   padding: 10px;
-  box-shadow: 0 2px 2px rgba(34, 34, 34, 0.31);
+  -webkit-box-shadow: 0 2px 2px rgba(34, 34, 34, 0.31);
+          box-shadow: 0 2px 2px rgba(34, 34, 34, 0.31);
   border-radius: 2%;
   width: 100px;
 }
@@ -190,7 +201,8 @@ li {
 
 .hero-button:active {
   background-color: #d0184d;
-  box-shadow: 0 2px 2px rgba(34, 34, 34, 0.21);
+  -webkit-box-shadow: 0 2px 2px rgba(34, 34, 34, 0.21);
+          box-shadow: 0 2px 2px rgba(34, 34, 34, 0.21);
 }
 
 .hero-text-container {
@@ -246,6 +258,7 @@ li {
 .section-hero-3-text a {
   opacity: 0;
   display: none;
+  -webkit-transition: opacity 0.2s;
   transition: opacity 0.2s;
 }
 
@@ -291,17 +304,17 @@ li {
 }*/
 
 .section-hero-1 {
-  background-image: -webkit-linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.6)),url(img/hero-pic-1.jpg);
+  background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(0,0,0,.7)),to(rgba(0,0,0,.6))),url(img/hero-pic-1.jpg);
   background-image: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.6)),url(img/hero-pic-1.jpg)
 }
 
 .section-hero-2 {
-  background-image: -webkit-linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.6)),url(img/hero-pic-2.jpg);
+  background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(0,0,0,.7)),to(rgba(0,0,0,.6))),url(img/hero-pic-2.jpg);
   background-image: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.6)),url(img/hero-pic-2.jpg)
 }
 
 .section-hero-3 {
-  background-image: -webkit-linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.6)),url(img/hero-pic-3.jpg);
+  background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(0,0,0,.7)),to(rgba(0,0,0,.6))),url(img/hero-pic-3.jpg);
   background-image: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.6)),url(img/hero-pic-3.jpg);
 }
 
@@ -309,7 +322,8 @@ li {
 
 .section-students img,
 .section-nonprofits img {
-  box-shadow: 0 2px 2px rgba(34, 34, 34, 0.31);
+  -webkit-box-shadow: 0 2px 2px rgba(34, 34, 34, 0.31);
+          box-shadow: 0 2px 2px rgba(34, 34, 34, 0.31);
 }
 
 .section-students p,
@@ -322,7 +336,8 @@ li {
 footer{
   background-color: #2d2d2d;
   height: 230px;
-  box-shadow: inset 0 10px 10px -5px #0d1116;
+  -webkit-box-shadow: inset 0 10px 10px -5px #0d1116;
+          box-shadow: inset 0 10px 10px -5px #0d1116;
 }
 /*single page */
 .single-page-text-box {
@@ -344,6 +359,7 @@ footer{
 /*page team*/
 
 .team-hero {
+  background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(0,0,0,.7)),to(rgba(0,0,0,.6))),url(img/hero-pic-3.jpg);
   background-image: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.6)),url(img/hero-pic-3.jpg);
   height: 400px;
 }
@@ -380,4 +396,8 @@ footer{
 
 div .team-card {
   margin-top: 20px;
+}
+
+.header-wrap {
+  background: rgba(34, 34, 34, 0.86);
 }
